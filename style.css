@@ -1,0 +1,36 @@
+* {
+  margin: 10px;
+  padding: 0;
+}
+body {
+  display: grid;
+  width: 100wh;
+  height: 100vh;
+
+  grid-template-areas:
+    "yellow yellow purple"
+    "red   green purple"
+    "red   pink pink";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 33% 33% 33%;
+}
+div:nth-child(1) {
+  background-color: yellow;
+  grid-area: yellow;
+}
+div:nth-child(2) {
+  grid-area: purple;
+  background-color: purple;
+}
+div:nth-child(3) {
+  grid-area: red;
+  background-color: red;
+}
+div:nth-child(4) {
+  grid-area: green;
+  background-color: green;
+}
+div:nth-child(5) {
+  grid-area: pink;
+  background-color: pink;
+}
